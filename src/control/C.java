@@ -1,0 +1,86 @@
+package control;
+
+import java.util.Scanner;
+
+public class C {
+
+	public static void main(String[] args) {
+		
+		Scanner sc= new Scanner(System.in);
+		System.out.print("Enter the First No A is :-");
+		int a=sc.nextInt();
+		System.out.print("Enter the Second No B is :-");
+		int b=sc.nextInt();
+		System.out.print("Enter the Third No C is :-");
+		int c=sc.nextInt();
+
+		//To Find the minimum no
+
+		if(a <= b)
+		{
+			if(a==b)
+			{
+				if(a==c)
+				{
+					System.out.println("a, b and c are equal");
+				}
+				else
+				{
+					if(a >= c)
+					{
+						System.out.println("c is small");
+					}
+					else
+					{
+						System.out.println("a and b are equal small");
+					}
+				}
+			}
+			else
+			{
+				if(a < c)
+				{
+					if(a == c) {
+						System.out.println("a and c are equal and small");
+					}
+					else
+					{
+						System.out.println("a is small");
+					}
+				}
+				else 
+				{
+					System.out.println("c is small");
+
+				}
+			}
+		}
+
+
+		else
+		{
+			if(b <= c)
+			{
+				if(b == c)
+				{
+					System.out.println(" b and c are equal and small");
+				}
+				else
+				{
+					System.out.println("b is small");
+				}
+			}
+			else
+			{
+				System.out.println("c is small");
+
+			}
+
+		}
+	}
+
+
+
+		
+	}
+
